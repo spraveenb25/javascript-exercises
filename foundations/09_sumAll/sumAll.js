@@ -1,5 +1,18 @@
-const sumAll = function() {
-
+const sumAll = function(a,b) {
+    if(!Number.isInteger(a) || !Number.isInteger(b)){return "ERROR"}
+    if(a<0 || b<0){return "ERROR"}
+    let sum = 0;
+    if(a<b){
+            for (i = a; i<=b; i++){ // a = 4 b = 7
+            sum = sum + i;
+        }
+    }
+    else {
+        for (i = b; i<=a; i++){ // a = 7 b = 7
+            sum = sum + i;
+        }
+    }
+    return sum;
 };
 
 // Do not edit below this line
